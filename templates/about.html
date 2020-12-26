@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" href="./css/about.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Health</h1>
+        </div>
+        <nav class="home-nav">
+            <ul>
+                <li><a href="{{ url_for('hello_world') }}">Home</a></li>
+                <li><a href="{{ url_for('cancer') }}">Breast Cancer</a></li>
+                <li><a href="{{ url_for('liver') }}">Liver Diagnosis</a></li>
+                <li><a href="{{ url_for('heart') }}">Heart Issues</a></li>
+                <li class="current"><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="image">
+            <img src="./static/about.svg" >
+        </div>
+        <form>
+
+        </form>
+    </section>
+    
+</body>
+</html>
